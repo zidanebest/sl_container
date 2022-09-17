@@ -1,0 +1,10 @@
+^C:\MAINDIC\SL_CONTAINER\BUILD\CMAKEFILES\21DDC7D836D955A055201A0B771090F6\GENERATE.STAMP.RULE
+setlocal
+D:\OtherSoftware\Cmake\bin\cmake.exe -SC:/MainDic/sl_container -BC:/MainDic/sl_container/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/MainDic/sl_container/build/sl_container_test.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
